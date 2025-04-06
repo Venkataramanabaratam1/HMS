@@ -18,12 +18,8 @@ const Login = () => {
     try {
       await axios
         .post(
-          "http://localhost:4000/api/v1/user/login",
-          { email, password, confirmPassword, role: "Admin" },
-          {
-            withCredentials: true,
-            headers: { "Content-Type": "application/json" },
-          }
+           import.meta.env.VITE_APP_BACKEN+'api/v1/user/login',
+          { email, password, confirmPassword, role: "Admin" }
         )
         .then((res) => {
           toast.success(res.data.message);
