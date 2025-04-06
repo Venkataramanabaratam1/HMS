@@ -12,6 +12,10 @@ import appointmentRouter from "./router/appointmentRouter.js";
 const app = express();
 config({ path: "./config.env" });
 
+app.get('/', (req, res) => {
+  res.status(200).json({ message: 'Backend is running' });
+});
+
 app.use(
   cors({
     origin: [process.env.FRONTEND_URL_ONE, process.env.FRONTEND_URL_TWO],
