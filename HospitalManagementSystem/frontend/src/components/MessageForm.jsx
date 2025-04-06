@@ -15,11 +15,7 @@ const MessageForm = () => {
       await axios
         .post(
            import.meta.env.VITE_APP_BACKEND+'api/v1/message/send',
-          { firstName, lastName, email, phone, message },
-          {
-            withCredentials: true,
-            headers: { "Content-Type": "application/json" },
-          }
+          { firstName, lastName, email, phone, message }
         )
         .then((res) => {
           toast.success(res.data.message);
