@@ -23,12 +23,8 @@ const AddNewAdmin = () => {
     try {
       await axios
         .post(
-          "http://localhost:4000/api/v1/user/admin/addnew",
-          { firstName, lastName, email, phone, nic, dob, gender, password },
-          {
-            withCredentials: true,
-            headers: { "Content-Type": "application/json" },
-          }
+          import.meta.env.VITE_APP_BACKEND+'api/v1/user/admin/addnew',
+          { firstName, lastName, email, phone, nic, dob, gender, password }
         )
         .then((res) => {
           toast.success(res.data.message);
