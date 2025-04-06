@@ -1,16 +1,16 @@
 # HMS
 
-# Stack used
-## Frontend : Reactjs
-## Backend : Nodejs
-## Database : MongoDB
+## Stack used
+### Frontend : Reactjs
+### Backend : Nodejs
+### Database : MongoDB
 
-# Deployment links
+## Deployment links
 ### Backendurl = https://hmsbackend-six.vercel.app/
 ### Frontend url = https://hmsfrontend-chi.vercel.app/
 ### Dashboard url = https://hmsdashboard-kappa.vercel.app/login
 
-# Screenshots
+## Screenshots
 ### Frontend
 ![image](https://github.com/user-attachments/assets/849a1ca4-622a-4cc1-9c7d-c667331c2bd6)
 ![image](https://github.com/user-attachments/assets/691e8ac2-3654-49d1-a7d1-c76c336377c2)
@@ -30,7 +30,6 @@ Note: I just inserted only one Department doctor (cardiology)
 ![image](https://github.com/user-attachments/assets/460f16d3-8bc1-4a67-9b6f-9df0563db170)
 ![image](https://github.com/user-attachments/assets/9daeeaf5-6377-412e-ba50-8dcbe3f9e22e)
 ![image](https://github.com/user-attachments/assets/85c54a94-28c4-4b87-9455-9361871c8d2a)
-
 
 
 Note: Application is working perfectly in localsystem but sometimes due to cookies issue it is not working good in deployed version. Due to lack of enough time it is not resolved.
