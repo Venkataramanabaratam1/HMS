@@ -34,4 +34,9 @@ Note: I just inserted only one Department doctor (cardiology)
 ### Backend
 ![image](https://github.com/user-attachments/assets/7a6f93ef-2659-4868-9a45-304d1045492b)
 
+### video
+
+https://github.com/user-attachments/assets/7ae7c904-c684-4920-9073-5a2e0b28f544
+
+
 Note: Application is working perfectly in localsystem but sometimes due to cookies issue it is not working good in deployed version. Due to lack of enough time it is not resolved.
