@@ -18,9 +18,8 @@ const Sidebar = () => {
 
   const handleLogout = async () => {
     await axios
-      .get("http://localhost:4000/api/v1/user/admin/logout", {
-        withCredentials: true,
-      })
+      .get( import.meta.env.VITE_APP_BACKEND+'api/v1/user/admin/logout'
+      )
       .then((res) => {
         toast.success(res.data.message);
         setIsAuthenticated(false);
