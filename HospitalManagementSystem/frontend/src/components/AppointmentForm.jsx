@@ -34,8 +34,7 @@ const AppointmentForm = () => {
   useEffect(() => {
     const fetchDoctors = async () => {
       const { data } = await axios.get(
-        import.meta.env.VITE_APP_BACKEND+'api/v1/user/doctors',
-        { withCredentials: true }
+        import.meta.env.VITE_APP_BACKEND+'api/v1/user/doctors'
       );
       setDoctors(data.doctors);
       console.log(data.doctors);
@@ -62,10 +61,6 @@ const AppointmentForm = () => {
           doctor_lastName: doctorLastName,
           hasVisited: hasVisitedBool,
           address,
-        },
-        {
-          withCredentials: true,
-          headers: { "Content-Type": "application/json" },
         }
       );
       toast.success(data.message);
