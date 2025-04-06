@@ -20,10 +20,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          import.meta.env.VITE_APP_BACKEND+'api/v1/user/patient/me',
-          {
-            withCredentials: true,
-          }
+          import.meta.env.VITE_APP_BACKEND+'api/v1/user/patient/me'
         );
         setIsAuthenticated(true);
         setUser(response.data.user);
