@@ -18,7 +18,7 @@ const Login = () => {
     try {
       await axios
         .post(
-          "http://localhost:4000/api/v1/user/login",
+         import.meta.env.VITE_APP_BACKEND+'api/v1/user/login',
           { email, password, confirmPassword, role: "Patient" },
           {
             withCredentials: true,
