@@ -12,7 +12,7 @@ import appointmentRouter from "./router/appointmentRouter.js";
 const app = express();
 config({ path: "./config.env" });
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
   res.status(200).json({ message: 'Backend is running' });
 });
 
