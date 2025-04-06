@@ -24,11 +24,7 @@ const Register = () => {
       await axios
         .post(
           import.meta.env.VITE_APP_BACKEND+'api/v1/user/patient/register',
-          { firstName, lastName, email, phone, nic, dob, gender, password },
-          {
-            withCredentials: true,
-            headers: { "Content-Type": "application/json" },
-          }
+          { firstName, lastName, email, phone, nic, dob, gender, password }
         )
         .then((res) => {
           toast.success(res.data.message);
