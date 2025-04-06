@@ -19,11 +19,7 @@ const Login = () => {
       await axios
         .post(
          import.meta.env.VITE_APP_BACKEND+'api/v1/user/login',
-          { email, password, confirmPassword, role: "Patient" },
-          {
-            withCredentials: true,
-            headers: { "Content-Type": "application/json" },
-          }
+          { email, password, confirmPassword, role: "Patient" }
         )
         .then((res) => {
           toast.success(res.data.message);
