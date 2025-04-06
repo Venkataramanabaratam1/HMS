@@ -11,8 +11,7 @@ const Messages = () => {
     const fetchMessages = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/message/getall",
-          { withCredentials: true }
+           import.meta.env.VITE_APP_BACKEND+'api/v1/message/getall'
         );
         setMessages(data.messages);
       } catch (error) {
