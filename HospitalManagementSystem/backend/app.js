@@ -17,12 +17,7 @@ app.get('/', (req, res) => {
 });
 
 app.use(
-  cors({
-    origin: 'https://hmsfrontend-chi.vercel.app',  // Allow your frontend's origin
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Allowed methods
-    allowedHeaders: ['Content-Type', 'Authorization'],  // Allowed headers
-    credentials: true,  // Allow cookies and credentials
-  })
+  cors()
 );
 
 app.use(cookieParser());
